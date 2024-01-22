@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils'
 
 import { SiteHeader } from '@/app/ui/Siteheader'
 import { SiteFooter } from '@/app/ui/SiteFooter'
-import { ThemeProvider } from '@/components/theme-provider'
+import { ThemeProvider } from '@/app/ui/theme-provider'
 
 const inter = Inter({
   subsets: ['latin'],
