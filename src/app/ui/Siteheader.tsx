@@ -1,6 +1,5 @@
 import Link from 'next/link'
 
-import { buttonVariants } from '@/app/ui/button'
 import { FullNav } from '@/app/ui/FullNav'
 import { MobileNav } from '@/app/ui/MobileNav'
 import { ModeToggle } from '@/app/ui/ModeToggle'
