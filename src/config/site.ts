@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: 'just-kwesi',
+  name: 'Kwesi',
   url: 'https://portfolio-v2-two-rosy.vercel.app/',
   ogImage: '',
   description: 'Personal portfolio site for Frederick Tetteh',

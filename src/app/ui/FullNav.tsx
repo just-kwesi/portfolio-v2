@@ -14,7 +14,7 @@ export function FullNav() {
     <div className="mr-4 hidden sm:flex">
       <Link href="/" className="mr-10 flex items-center space-x-2">
         <Image src={logo} width={24} height={24} alt="logo" />
-        <span className="hidden font-bold sm:inline-block">
+        <span className="hidden font-semibold sm:inline-block">
           {siteConfig.name}
         </span>
       </Link>
