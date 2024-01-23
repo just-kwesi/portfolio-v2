@@ -66,10 +66,3 @@ export default async function Projects() {
     </main>
   )
 }
-
-// ;<Link className={buttonVariants({ variant: 'outline' })}>Click here</Link>
-
-// <Button variant="outline" size="icon">
-//               <Github className=" h-4 w-4" />
-//               <span className="sr-only">Project link plantagram</span>
-//             </Button>
