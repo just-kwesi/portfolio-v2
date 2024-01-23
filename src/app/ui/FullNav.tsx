@@ -1,10 +1,11 @@
 'use client'
 import { usePathname } from 'next/navigation'
-import { NavItem } from '@/lib/types'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import { Icons } from '@/app/ui/icons'
 import { siteConfig } from '@/config/site'
+import Image from 'next/image'
+import logo from '@/public/logo.png'
 
 export function FullNav() {
   const pathname = usePathname()
@@ -12,7 +13,7 @@ export function FullNav() {
   return (
     <div className="mr-4 hidden sm:flex">
       <Link href="/" className="mr-10 flex items-center space-x-2">
-        <Icons.logo className="h-6 w-6" />
+        <Image src={logo} width={24} height={24} alt="logo" />
         <span className="hidden font-bold sm:inline-block">
           {siteConfig.name}
         </span>
