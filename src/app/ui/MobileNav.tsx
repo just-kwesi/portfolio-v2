@@ -5,20 +5,13 @@ import { Menu } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import Link, { LinkProps } from 'next/link'
 import { siteConfig } from '@/config/site'
-import { Icons } from '@/app/ui/icons'
 import { cn } from '@/lib/utils'
 import { Button } from '@/app/ui/button'
 import { usePathname } from 'next/navigation'
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from '@/app/ui/sheet'
+import Image from 'next/image'
+import logo from '@/public/logo.png'
+
+import { Sheet, SheetContent, SheetTrigger } from '@/app/ui/sheet'
 
 export function MobileNav() {
   const [open, setOpen] = React.useState(false)
@@ -36,8 +29,8 @@ export function MobileNav() {
           className="flex items-center gap-3 ml-5"
           onOpenChange={setOpen}
         >
-          <Icons.logo className="h-4 w-4" />
-          <span className="font-bold">{siteConfig.name}</span>
+          <Image src={logo} width={24} height={24} alt="logo" />
+          <span className="font-bold">kwesi</span>
         </MobileLink>
 
         <nav className="flex items-start gap-8 text-sm flex-col mt-10 ml-5">
