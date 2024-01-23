@@ -4,7 +4,7 @@ import SocialLinks from '@/app/ui/social-links'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-start gap-10 justify-start p-24">
+    <main className="flex min-h-screen flex-col items-start gap-10 justify-start p-10 sm:p-24">
       <div className="space-y-2">
         <h1
           className={cn(
