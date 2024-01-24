@@ -25,3 +25,5 @@ export type ProjectItem = {
   liveUrl: string
   stack: any
 }
+
+export type WorkItem = { company: string; jobDescription: string; role: string }

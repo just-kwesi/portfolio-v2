@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
 import { cn } from '@/lib/utils'
 import { siteConfig } from '@/config/site'
@@ -8,6 +9,7 @@ import { siteConfig } from '@/config/site'
 import { SiteHeader } from '@/app/ui/Siteheader'
 // import { SiteFooter } from '@/app/ui/SiteFooter'
 import { ThemeProvider } from '@/app/ui/theme-provider'
+import { Toaster } from '@/app/ui/toaster'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -60,10 +62,12 @@ export default function RootLayout({
           <div className="relative flex min-h-screen flex-col bg-background max-w-screen-lg mx-auto">
             <SiteHeader />
             <main className="flex-1">{children}</main>
+            <Toaster />
             {/* <SiteFooter /> */}
           </div>
         </ThemeProvider>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   )

@@ -74,11 +74,11 @@ export function MobileNav() {
               setOpen?.(false)
             }}
           >
-            Work
+            Experience
           </Link>
 
           <Link
-            href="/contact-me"
+            href="/contact"
             className={cn(
               'transition-colors hover:text-foreground/80',
               pathname.startsWith('/contact-me')
@@ -89,7 +89,7 @@ export function MobileNav() {
               setOpen?.(false)
             }}
           >
-            Contact Me
+            Contact
           </Link>
         </nav>
       </SheetContent>

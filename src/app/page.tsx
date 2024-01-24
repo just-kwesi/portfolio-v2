@@ -4,7 +4,7 @@ import SocialLinks from '@/app/ui/social-links'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-start gap-10 justify-start p-10 sm:p-24">
+    <main className="flex min-h-screen flex-col items-start gap-10 justify-start p-10 sm:p-24 ">
       <div className="space-y-2">
         <h1
           className={cn(
@@ -20,7 +20,7 @@ export default function Home() {
       </div>
 
       <section>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
+        <p className="leading-7 [&:not(:first-child)]:mt-6 font-light">
           <Balancer>
             Hello! I&apos;m Frederick, a software engineer with roots in Ghana
             and creativity blossoming in Austin. Fueled by a passion for
@@ -30,7 +30,7 @@ export default function Home() {
             <span className="font-bold">Python</span>.
           </Balancer>
         </p>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
+        <p className="leading-7 [&:not(:first-child)]:mt-6 font-light">
           <Balancer>
             When I&apos;m not coding, you&apos;ll find me unraveling the
             mysteries of how things work. Welcome to my world of innovative

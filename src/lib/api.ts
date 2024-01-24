@@ -15,6 +15,7 @@ async function fetchGraphQL(query: string, preview = false): Promise<any> {
         }`,
       },
       body: JSON.stringify({ query }),
+      // cache: 'no-store',
     }
   ).then((response) => response.json())
 }
@@ -59,6 +60,28 @@ export async function fetchProjects() {
     return data.data.v2ProjectsCollection
   } catch (error) {
     console.error('Contentful Error:', error)
-    throw new Error('Failed to fetch about me section.')
+    throw new Error('Failed to fetch products section.')
+  }
+}
+
+const EXPERIENCE_QUERY = `
+query ExperienceCollection {
+  experienceCollection {
+    items {
+      company
+      jobDescription
+      role
+      stack
+    }
+  }
+}
+`
+export async function fetchWorkExperience() {
+  try {
+    const data = await fetchGraphQL(EXPERIENCE_QUERY)
+    return data.data.experienceCollection
+  } catch (error) {
+    console.error('Contentful Error:', error)
+    throw new Error('Failed to work experience products section.')
   }
 }
