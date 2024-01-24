@@ -9,6 +9,7 @@ import { siteConfig } from '@/config/site'
 import { SiteHeader } from '@/app/ui/Siteheader'
 // import { SiteFooter } from '@/app/ui/SiteFooter'
 import { ThemeProvider } from '@/app/ui/theme-provider'
+import { Toaster } from '@/app/ui/toaster'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -61,6 +62,7 @@ export default function RootLayout({
           <div className="relative flex min-h-screen flex-col bg-background max-w-screen-lg mx-auto">
             <SiteHeader />
             <main className="flex-1">{children}</main>
+            <Toaster />
             {/* <SiteFooter /> */}
           </div>
         </ThemeProvider>
