@@ -1,4 +1,5 @@
 import { AboutItem } from './types'
+import { unstable_noStore as noStore } from 'next/cache'
 
 async function fetchGraphQL(query: string, preview = false): Promise<any> {
   return fetch(
@@ -31,6 +32,7 @@ const ABOUT_SECTION = `query AboutCollection {
 
 export async function fetchAbout() {
   try {
+    await new Promise((resolve) => setTimeout(resolve, 3000))
     const data = (await fetchGraphQL(ABOUT_SECTION)) as AboutItem
     return data.data.aboutCollection.items
   } catch (error) {
@@ -39,38 +41,23 @@ export async function fetchAbout() {
   }
 }
 
-const PROJECTS_QUERY = `query ProjectsCollection {
-  projectsCollection{
-    total
-    limit
+const PROJECTS_QUERY = `query Items {
+  v2ProjectsCollection {
     items {
-      description
       githubUrl
-      tagsModelCollection {
-        items {
-          ... on Tags {
-            tagName
-          }
-        }
-      }
-      projectUrl
-      title
-      projectImage {
-        fileName
-        description
-        url
-        title
-        width
-        height
-      }
+      liveUrl
+      projectName
+      stack
+      projectDescription
     }
   }
 }`
 
 export async function fetchProjects() {
   try {
+    noStore()
     const data = await fetchGraphQL(PROJECTS_QUERY)
-    return data.data.projectsCollection
+    return data.data.v2ProjectsCollection
   } catch (error) {
     console.error('Contentful Error:', error)
     throw new Error('Failed to fetch about me section.')

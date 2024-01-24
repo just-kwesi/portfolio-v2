@@ -17,3 +17,11 @@ export type AboutItem = {
     }
   }
 }
+
+export type ProjectItem = {
+  projectName: string
+  projectDescription: string
+  githubUrl: string
+  liveUrl: string
+  stack: any
+}
