@@ -55,7 +55,6 @@ const PROJECTS_QUERY = `query Items {
 
 export async function fetchProjects() {
   try {
-    noStore()
     const data = await fetchGraphQL(PROJECTS_QUERY)
     return data.data.v2ProjectsCollection
   } catch (error) {
