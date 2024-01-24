@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils'
 import { siteConfig } from '@/config/site'
 
 import { SiteHeader } from '@/app/ui/Siteheader'
-import { SiteFooter } from '@/app/ui/SiteFooter'
+// import { SiteFooter } from '@/app/ui/SiteFooter'
 import { ThemeProvider } from '@/app/ui/theme-provider'
 
 const inter = Inter({
@@ -31,6 +31,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Frederick Tetteh', url: 'https://frederick-tetteh.com' }],
   creator: 'Frederick Tetteh',
+  icons: {
+    icon: '/favicon.ico',
+    // shortcut: '/favicon-16x16.png',
+    // apple: '/apple-touch-icon.png',
+  },
 }
 
 export default function RootLayout({
@@ -52,10 +57,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="relative flex min-h-screen flex-col bg-background">
+          <div className="relative flex min-h-screen flex-col bg-background max-w-screen-lg mx-auto">
             <SiteHeader />
             <main className="flex-1">{children}</main>
-            <SiteFooter />
+            {/* <SiteFooter /> */}
           </div>
         </ThemeProvider>
         <SpeedInsights />

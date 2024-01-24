@@ -5,3 +5,23 @@ export interface NavItem {
   external?: boolean
   label?: string
 }
+
+export type AboutItem = {
+  data: {
+    aboutCollection: {
+      total: number
+      items: {
+        aboutMe: string
+        title: string
+      }[]
+    }
+  }
+}
+
+export type ProjectItem = {
+  projectName: string
+  projectDescription: string
+  githubUrl: string
+  liveUrl: string
+  stack: any
+}
