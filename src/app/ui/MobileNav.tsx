@@ -74,7 +74,7 @@ export function MobileNav() {
               setOpen?.(false)
             }}
           >
-            Work
+            Experience
           </Link>
 
           <Link

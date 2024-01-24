@@ -19,8 +19,7 @@ export function ProjectCard({ project }: { project: ProjectItem }) {
       <CardHeader className="grid grid-cols-[1fr_110px] items-start gap-4 space-y-0">
         <div className="space-y-1">
           <CardTitle>{project.projectName}</CardTitle>
-          <Separator />
-          <CardDescription className="pt-3">
+          <CardDescription className="pt-1">
             {project.projectDescription}
           </CardDescription>
         </div>

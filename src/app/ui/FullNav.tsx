@@ -48,7 +48,7 @@ export function FullNav() {
               : 'text-foreground/60'
           )}
         >
-          Work
+          Experience
         </Link>
 
         <Link
