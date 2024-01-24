@@ -15,6 +15,7 @@ async function fetchGraphQL(query: string, preview = false): Promise<any> {
         }`,
       },
       body: JSON.stringify({ query }),
+      // cache: 'no-store',
     }
   ).then((response) => response.json())
 }
@@ -77,7 +78,6 @@ query ExperienceCollection {
 `
 export async function fetchWorkExperience() {
   try {
-    noStore()
     const data = await fetchGraphQL(EXPERIENCE_QUERY)
     return data.data.experienceCollection
   } catch (error) {
