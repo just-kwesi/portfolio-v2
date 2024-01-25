@@ -15,13 +15,13 @@ const inter = Inter({
   subsets: ['latin'],
   variable: '--font-sans',
 })
+const metadataBase = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'
 
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
     template: `%s | ${siteConfig.name}`,
   },
-  metadataBase: new URL(siteConfig.url),
   description: siteConfig.description,
   keywords: [
     'Frederick Tetteh',
@@ -32,6 +32,7 @@ export const metadata: Metadata = {
     'server components',
     'personal portfolio',
   ],
+  metadataBase: new URL(metadataBase),
   authors: [{ name: 'Frederick Tetteh', url: 'https://frederick-tetteh.com' }],
   creator: 'Frederick Tetteh',
   openGraph: {
@@ -62,7 +63,6 @@ export const metadata: Metadata = {
     shortcut: '/favicon-16x16.png',
     apple: '/apple-touch-icon.png',
   },
-  manifest: `${siteConfig.url}site.webmanifest`,
 }
 
 export const viewport: Viewport = {
