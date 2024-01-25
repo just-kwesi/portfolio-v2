@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     images: [
       {
-        url: siteConfig.ogImage,
+        url: './opengraph-image.png',
         width: 1200,
         height: 630,
         alt: siteConfig.name,
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteConfig.name,
     description: siteConfig.description,
-    images: [siteConfig.ogImage],
+    images: ['./opengraph-image.png'],
     creator: '@Fhred_rick',
   },
   icons: {
