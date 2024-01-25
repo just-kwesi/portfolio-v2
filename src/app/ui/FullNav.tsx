@@ -2,10 +2,8 @@
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
-import { Icons } from '@/app/ui/icons'
-import { siteConfig } from '@/config/site'
 import Image from 'next/image'
-import logo from '@/public/logo.png'
+import logo from '@/assets/logo.png'
 
 export function FullNav() {
   const pathname = usePathname()
