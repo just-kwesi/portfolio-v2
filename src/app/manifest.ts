@@ -26,7 +26,7 @@ export default function manifest(): MetadataRoute.Manifest {
       {
         src: '/screenshot3.png',
         type: 'image/png',
-        sizes: '1024x768',
+        sizes: '4450x2622',
       },
       {
         src: '/screenshot1.jpg',
