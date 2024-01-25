@@ -1,7 +1,12 @@
 import { WorkCardWrapper } from '@/app/ui/work/work-card-wrapper'
-
+import { Metadata } from 'next'
 import { Suspense } from 'react'
 import { CardsSkeleton } from '@/app/ui/skeletons'
+
+export const metadata: Metadata = {
+  title: 'Experience',
+  description: 'A list of places where i have worked and some work details.',
+}
 
 export default async function Work() {
   return (

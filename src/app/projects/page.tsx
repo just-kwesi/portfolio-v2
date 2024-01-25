@@ -1,7 +1,12 @@
 import { CardWrapper } from '@/app/ui/projects/card-wrapper'
-
+import { Metadata } from 'next'
 import { Suspense } from 'react'
 import { CardsSkeleton } from '@/app/ui/skeletons'
+
+export const metadata: Metadata = {
+  title: 'Projects',
+  description: 'A list of some projects i have worked on.',
+}
 
 export default async function Projects() {
   return (
