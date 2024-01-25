@@ -4,12 +4,11 @@ import * as React from 'react'
 import { Menu } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import Link, { LinkProps } from 'next/link'
-import { siteConfig } from '@/config/site'
 import { cn } from '@/lib/utils'
 import { Button } from '@/app/ui/button'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
-import logo from '@/public/logo.png'
+import logo from '@/assets/logo.png'
 
 import { Sheet, SheetContent, SheetTrigger } from '@/app/ui/sheet'
 
