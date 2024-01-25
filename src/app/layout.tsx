@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     images: [
       {
-        url: './opengraph-image.png',
+        url: '/opengraph-image.png',
         width: 1200,
         height: 630,
         alt: siteConfig.name,
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteConfig.name,
     description: siteConfig.description,
-    images: ['./opengraph-image.png'],
+    images: ['/opengraph-image.png'],
     creator: '@Fhred_rick',
   },
   icons: {
@@ -63,6 +63,7 @@ export const metadata: Metadata = {
     shortcut: '/favicon-16x16.png',
     apple: '/apple-touch-icon.png',
   },
+  category: 'technology',
 }
 
 export const viewport: Viewport = {
