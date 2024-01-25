@@ -38,7 +38,7 @@ export default function SocialLinks() {
           <span className="sr-only">LinkedIn</span>
         </div>
       </Link>
-      <Link href={socialLinks.github.linkUrl} target="_blank" rel="noreferrer">
+      <Link href={socialLinks.twitter.linkUrl} target="_blank" rel="noreferrer">
         <div
           className={cn(
             buttonVariants({

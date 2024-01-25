@@ -7,6 +7,7 @@ import { Label } from '@/app/ui/label'
 import { Textarea } from '@/app/ui/textarea'
 import { Button } from '@/app/ui/button'
 import { toast } from '@/app/ui/use-toast'
+import SocialLinks from '@/app/ui/social-links'
 
 export default function ContactForm() {
   const [state, handleSubmit] = useForm('mwkwenko')
@@ -48,7 +49,6 @@ export default function ContactForm() {
               errors={state.errors}
             />
           </div>
-
           <div className="grid w-full max-w-sm items-center gap-1.5">
             <Label htmlFor="email">Email</Label>
             <Input id="email" type="email" name="email" placeholder="Email" />
@@ -59,7 +59,6 @@ export default function ContactForm() {
               className="text-sky-blue"
             />
           </div>
-
           <div className="grid w-full max-w-sm items-center gap-1.5">
             <Label htmlFor="message">Message</Label>
             <Textarea
@@ -80,6 +79,7 @@ export default function ContactForm() {
               Submit
             </Button>
           </div>
+          <SocialLinks />
         </fieldset>
       </form>
     </div>
