@@ -22,7 +22,7 @@ export default function Home() {
       <section>
         <p className="leading-7 [&:not(:first-child)]:mt-6 font-light">
           <Balancer>
-            Hello! I&apos;m Frederick, a software engineer with roots in Ghana
+            Hello! I&apos;m Frederick, a software engineer with roots from Ghana
             and creativity blossoming in Austin. Fueled by a passion for
             developing cool software products, my tech toolkit is a blend of{' '}
             <span className="font-bold">Next.js</span>,
