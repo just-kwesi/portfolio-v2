@@ -5,7 +5,7 @@ import { WorkCard } from './work-card'
 export async function WorkCardWrapper() {
   const { items } = await fetchWorkExperience()
   return (
-    <div>
+    <div className="space-y-7">
       {!!items.length &&
         items.map((work: WorkItem) => {
           return <WorkCard key={work.company} work={work} />

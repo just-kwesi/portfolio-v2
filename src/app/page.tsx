@@ -22,9 +22,9 @@ export default function Home() {
       <section>
         <p className="leading-7 [&:not(:first-child)]:mt-6 font-light">
           <Balancer>
-            Hello! I&apos;m Frederick, a software engineer with roots from Ghana
-            and creativity blossoming in Austin. Fueled by a passion for
-            developing cool software products, my tech toolkit is a blend of{' '}
+            Hello! I&apos;m Frederick, a software engineer with roots in Ghana
+            and creativity blossoming in Austin. My passion lies in developing
+            innovative software solutions, leveraging technologies like{' '}
             <span className="font-bold">Next.js</span>,
             <span className="font-bold"> TypeScript</span> , and{' '}
             <span className="font-bold">Python</span>.
@@ -32,9 +32,15 @@ export default function Home() {
         </p>
         <p className="leading-7 [&:not(:first-child)]:mt-6 font-light">
           <Balancer>
-            When I&apos;m not coding, you&apos;ll find me unraveling the
-            mysteries of how things work. Welcome to my world of innovative
-            development and endless curiosity!
+            I thrive on unraveling the mysteries of technology and transforming
+            ideas into impactful products.
+          </Balancer>
+        </p>
+        <p className="leading-7 [&:not(:first-child)]:mt-6 font-light">
+          <Balancer>
+            When I&apos;m not coding, I&apos;m exploring how things work and
+            constantly fueling my curiosity. Welcome to my world of innovative
+            development and endless exploration!
           </Balancer>
         </p>
       </section>

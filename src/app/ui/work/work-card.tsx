@@ -9,7 +9,7 @@ import {
 
 export function WorkCard({ work }: { work: WorkItem }) {
   return (
-    <Card className="max-w-screen-md mx-auto border-none ">
+    <Card className="max-w-screen-md mx-auto border">
       <CardHeader className="grid grid-cols-[1fr_110px] items-start gap-4 space-y-0">
         <div className="space-y-1">
           <CardTitle>{work.company}</CardTitle>
