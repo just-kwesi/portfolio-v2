@@ -15,7 +15,7 @@ import { ProjectItem } from '@/lib/types'
 export function ProjectCard({ project }: { project: ProjectItem }) {
   const stack = Object.keys(project.stack)
   return (
-    <Card className="max-w-screen-md mx-auto border-none ">
+    <Card className="max-w-screen-md mx-auto">
       <CardHeader className="grid grid-cols-[1fr_110px] items-start gap-4 space-y-0">
         <div className="space-y-1">
           <CardTitle>{project.projectName}</CardTitle>
@@ -52,7 +52,7 @@ export function ProjectCard({ project }: { project: ProjectItem }) {
         </div>
       </CardHeader>
       <CardContent>
-        <div className="flex space-x-4 text-sm text-muted-foreground">
+        <div className="flex flex-wrap space-x-4 text-sm text-muted-foreground">
           {stack.map((key) => {
             const stackProperties = project.stack[key]
             return (
